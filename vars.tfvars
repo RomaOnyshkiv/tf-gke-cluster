@@ -1,3 +1,3 @@
-GKE_NUM_NODES = 2
+GKE_NUM_NODES  = 2
 GOOGLE_PROJECT = "doki-417600"
-GOOGLE_REGION = "us-central1-c"
+GOOGLE_REGION  = "us-central1-c"

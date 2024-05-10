@@ -5,10 +5,11 @@ terraform {
   }
 }
 
-module "github_repository" {
-  source              = "github.com/RomaOnyshkiv/tf-gke-cluster"
-  github_owner        = var.GITHUB_OWNER
-  github_token        = var.GITHUB_TOKEN
+provider "google" {
+
+  project = var.GOOGLE_PROJECT
+  region  = var.GOOGLE_REGION
+
 }
 module "gke_cluster" {
   source         = "github.com/RomaOnyshkiv/tf-google-gke-cluster"
