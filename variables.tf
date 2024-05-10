@@ -30,3 +30,13 @@ variable "GKE_POOL_NAME" {
   default     = "doki-pool"
   description = "GKE pool name"
 }
+
+variable "GITHUB_OWNER" {
+  type        = string
+  description = "Github owner repository to use"
+}
+
+variable "GITHUB_TOKEN" {
+  type        = string
+  description = "Github personal access token"
+}
